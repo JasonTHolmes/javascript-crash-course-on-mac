@@ -132,3 +132,8 @@ for (let i = 0; i < fruits.length; i++){
 
 // Array common Methods
 console.log('to string', fruits.toString());
+console.log(fruits.join(' - '));
+console.log(fruits.pop(), fruits);
+console.log(fruits.push('blackberries'), fruits)
+fruits[4] = "new fruit";
+console.log(fruits);
