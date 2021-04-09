@@ -169,7 +169,7 @@ let student = {
     age: 37,
     height: 180,
     studentInfo: function(){
-        return this.first + '\n' + this.last;
+        return this.first + '\n' + this.last + '\n' + this.age;
     }
 };
 
@@ -179,4 +179,44 @@ let student = {
 // console.log(student.first);
 student.age++;
 console.log(student.age);
+
 console.log(student.studentInfo());
+
+// Conditionals, control flows (if else)
+// 18-35 is my target demographic
+// && AND
+// || OR
+var age = 45;
+
+if((age >= 18) && (age <= 35)){
+    status = 'Target demo';
+    console.log(status);
+}else{
+    status = 'Not my audience';
+    console.log(status);;
+}
+
+// Switch statements
+// differentiate between weekday vs weekend
+// Day 0 --> Sunday --> Weekend
+// Day 1 --> Monday --> Weekday
+// Day 2 --> Tuesday --> Weekday
+// Day 3 --> Wednesday --> Weekday
+// Day 4 --> Thursday --> Weekday
+// Day 5 --> Friday --> Weekend
+// Day 6 --> Saturday --> Weekend
+switch(3){
+    case 0:
+        text = 'Weekend'
+        break;
+    case 5:
+        text = 'Weekend'
+        break;
+    case 6:
+        text = 'weekend'
+        break;
+    default:
+    text = 'weekday'
+}
+
+console.log(text);
