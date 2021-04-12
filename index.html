@@ -10,6 +10,21 @@
 <body>
     <h1 id="someText"></h1>
 
-    <script src="js/script.js"></script>
+    <script>
+        let students = `[
+    {
+        "name": "Jason",
+        "age": 37,
+        "height": 180
+    },
+    {
+        "name": "Yaseen",
+        "age": 38,
+        "height": 170
+    }
+]`
+
+    console.log(JSON.parse(students)[1].age);
+    </script>
 </body>
 </html>
